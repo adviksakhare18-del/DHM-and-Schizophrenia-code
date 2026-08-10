@@ -28,7 +28,7 @@ def errors(mg,decay,stat):
     t1,t2 = 0,0
     for i in range(0,len(mg)):
         A = False # This is the variable that confirms if you have it or not.
-        if -decay[i] > (2.47608430e-07)*mg[i]**2 + (3.59130201e-03)*mg[i] + (1.11493342e-01):
+        if m.fabs(decay[i]) > (2.47608430e-07)*mg[i]**2 + (3.59130201e-03)*mg[i] + (1.11493342e-01):
             A = True # Make sure to use |decay| in equation
         if A and stat[i] == 'healthy': # False positive (type 1)
             t1 += 1
