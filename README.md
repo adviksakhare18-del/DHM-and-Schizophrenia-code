@@ -797,22 +797,21 @@ Potential extensions include:
 * Developed computational validation and visualisation tools
 
 
-## Priya Kaur (II) - B.Psychology (maj.Neuroscience) @ Macquarie University
+## Gurkiran (Priya) Kaur (II) - B.Psychology (maj.Neuroscience) @ Macquarie University
 
-**Research Analyst & Scientific Interpretation**
-
-* Conducted background research and literature analysis
-* Provided biological and scientific interpretation of the computational results
-* Contributed to contextualising the mathematical findings
-* Assisted with interpretation of implications and limitations
-
+**Psychological & Neurobiological Researcher**
+* Investigated relationships between neuronal excitability, action-potential dynamics, and schizophrenia.
+* Synthesised findings from relevant neuroscience, psychology, and psychiatric literature.
+* Provided biological context for the mathematical model and its parameterisation. 
+* Assessed the biological plausibility, limitations, and potential implications of the model. 
+* Contributed to the formulation of the research question and interpretation of findings. 
 ---
 
 # License / Usage
 
-This repository is made available for personal and educational use.
+This repository is made available for personal and educational use only.
 
-Please credit the original author when reusing the research, mathematical framework or source code, and do not present the work as your own.
+Please credit the original authors when reusing the research, mathematical framework or source code, and do not present the work as your own. (Academic dishonestly is not cool)
 
 ---
 
