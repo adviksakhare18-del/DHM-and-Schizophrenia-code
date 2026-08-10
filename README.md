@@ -366,7 +366,7 @@ For each population, the conditional probability of each outcome is estimated fr
 Bayes' theorem is then applied:
 
 
-\(P(S\mid C)\)
+$P(S \mid C)$
 ==========
 
 $$\frac{P(C \mid S)P(S)}
@@ -510,8 +510,8 @@ The script evaluates:
 
 * individual test accuracy
 * joint test outcomes
-* \(P(\text{schizophrenic}\mid\text{test outcome})\)
-* \(P(\text{correct diagnosis}\mid\text{test outcome})\)
+* $P(\text{schizophrenic}\mid\text{test outcome})$
+* $P(\text{correct diagnosis}\mid\text{test outcome})$
 
 for cases:
 
