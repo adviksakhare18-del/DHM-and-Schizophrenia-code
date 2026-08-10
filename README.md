@@ -107,13 +107,12 @@ The model therefore takes the form
 $$
 V(t)=
 \begin{cases}
-\text{base}, & t < -\frac{b}{mg} [6pt]
-mg,t+b+\text{base}, & -\frac{b}{mg}\leq t<0 [6pt]
-e^{-kt/(2j)}
-\left[
+\mathrm{base}, & t < -\frac{b}{mg},\\
+mg\,t+b+\mathrm{base}, & -\frac{b}{mg}\leq t<0,\\
+e^{-\frac{kt}{2j}}
+\left(
 b\cos(Qt)+\frac{C}{Q}\sin(Qt)
-\right]+\text{base},
-& t\geq0.
+\right)+\mathrm{base}, & t\geq0.
 \end{cases}
 $$
 
@@ -188,13 +187,11 @@ The optimisation minimises the sum of squared differences between the observed s
 
 $$
 E(\theta)
-=========
-
+=
 \sum_i
 \left(
 V_{\mathrm{model}}(t_i;\theta)
-------------------------------
-
+-
 V_{\mathrm{observed}}(t_i)
 \right)^2
 $$
@@ -225,7 +222,7 @@ The default optimisation configuration uses:
 * Nelder-Mead
 * adaptive simplex scaling
 * up to 100,000 iterations
-* (10^{-9}) absolute convergence tolerances
+* (10e-9) absolute convergence tolerances
 
 The output is:
 
