@@ -369,7 +369,7 @@ Bayes' theorem is then applied:
 $P(S \mid C)$
 ==========
 
-$$\frac{P(C \mid S)P(S)}
+$$ = \frac{P(C \mid S)P(S)}
 {P(C \mid S)P(S)+P(C \mid H)P(H)}$$
 
 
@@ -519,7 +519,7 @@ $$
 AB,\quad AB',\quad A'B,\quad A'B'.
 $$
 
-Where A = Positive for test A, and A' = Negative for test A, so A'B is negative on A and positive on B.
+Where A = Positive for test A, and A' = Negative for test A, so A'B is a negative result for A and a positive one for B.
 
 Importantly, the decision boundaries are not refitted to the external test data. They are carried over from the primary analysis.
 
