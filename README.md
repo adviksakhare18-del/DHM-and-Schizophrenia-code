@@ -365,13 +365,7 @@ For each population, the conditional probability of each outcome is estimated fr
 
 Bayes' theorem is then applied:
 
-
-$P(S \mid C)$
-==========
-
-$$ = \frac{P(C \mid S)P(S)}
-{P(C \mid S)P(S)+P(C \mid H)P(H)}$$
-
+$$P(S \mid C) = \frac{P(C \mid S)P(S)}{P(C \mid S)P(S)+P(C \mid H)P(H)}$$
 
 where:
 
@@ -385,7 +379,7 @@ $$
 P(S)=0.01.
 $$
 
-This is separate from the approximately balanced composition of the computational study sample.
+This is separate from the approximately balanced composition of the computational study sample, and represents the approximate probability of an Australian having schizophrenia.
 
 ---
 
@@ -406,8 +400,8 @@ The classification rule is based on the (mg)-versus-decay separation boundary.
 
 From this, we found that the method of diagnosis has these many errors:
 
-* Type 1 - 0 (false positives)
-* Type 2 - 27 (false negatives)
+* Type 1 - 0
+* Type 2 - 27
 
 ---
 
@@ -705,7 +699,6 @@ This project combines techniques from several areas of quantitative research:
 
 * NumPy
 * SciPy
-* Pandas
 * Matplotlib
 * CSV-based data pipelines
 * Numerical signal processing
@@ -790,7 +783,7 @@ Potential extensions include:
 
 # Author Contributions
 
-## Advik Sakhare
+## Advik Sakhare (I) - B.Actuarial Studies / B. Advanced Math (hons.) @ UNSW
 
 **Computational Researcher & Quantitative Developer**
 
@@ -803,7 +796,8 @@ Potential extensions include:
 * Developed the external testing pipeline
 * Developed computational validation and visualisation tools
 
-## Priya Kaur
+
+## Priya Kaur (II) - B.Psychology (maj.Neuroscience) @ Macquarie University
 
 **Research Analyst & Scientific Interpretation**
 
