@@ -116,7 +116,7 @@ b\cos(Qt)+\frac{C}{Q}\sin(Qt)
 \end{cases}
 $$
 
-The complete implementation can be found in `Claude_curve_fit.py`.
+This was solved using the Laplace Transform, and the complete implementation can be found in `Claude_curve_fit.py`.
 
 ---
 
