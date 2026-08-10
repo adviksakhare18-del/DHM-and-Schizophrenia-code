@@ -108,7 +108,7 @@ $$
 V(t)=
 \begin{cases}
 \mathrm{base}, & t < -\frac{b}{mg},\\
-mg\,t+b+\mathrm{base}, & -\frac{b}{mg}\leq t<0,\\
+mg\*t+b+\mathrm{base}, & -\frac{b}{mg}\leq t<0,\\
 e^{-\frac{kt}{2j}}
 \left(
 b\cos(Qt)+\frac{C}{Q}\sin(Qt)
