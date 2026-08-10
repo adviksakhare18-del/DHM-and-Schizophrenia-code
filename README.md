@@ -785,16 +785,16 @@ Potential extensions include:
 
 ## Advik Sakhare (I) - B.Actuarial Studies / B. Advanced Math (hons.) @ UNSW
 
-**Computational Researcher & Quantitative Developer**
+**Mathematical Modelling & Computational Mathematics Researcher**
 
-* Developed the mathematical and computational methodology
-* Implemented the action-potential fitting pipeline
-* Implemented nonlinear parameter estimation using Nelder-Mead
-* Developed parameter extraction and feature engineering
-* Implemented polynomial separation-boundary construction
-* Implemented Bayesian probability calculations
-* Developed the external testing pipeline
-* Developed computational validation and visualisation tools
+* Developed the mathematical framework used to model neuronal action potentials.
+* Derived and implemented the piecewise differential-equation model underlying the action-potential approximation.
+* Developed mathematical transformations for deriving decay and oscillation parameters from the fitted model.
+* Designed and implemented the polynomial-regression approach used to construct separation boundaries between the two populations.
+* Implemented the Bayesian classification framework and calculated posterior probabilities for combinations of diagnostic tests.
+* Performed numerical analysis, error analysis, and visual validation of the mathematical model.
+* Implemented the project primarily in Python using NumPy, SciPy, Pandas, and Matplotlib.
+* Designed and assembled the computational methodology connecting differential equations, numerical optimisation, statistical modelling, and probabilistic classification.
 
 
 ## Gurkiran (Priya) Kaur (II) - B.Psychology (maj.Neuroscience) @ Macquarie University
