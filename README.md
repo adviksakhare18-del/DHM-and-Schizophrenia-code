@@ -1,4 +1,4 @@
-# Mathematical Modelling of Neuronal Action Potentials for Schizophrenia Classification
+# Damped Harmonic Motion and Schizophrenia: From Differential Equations to Diagnosis
 
 ### Nonlinear Parameter Estimation · Scientific Computing · Feature Engineering · Bayesian Inference
 
