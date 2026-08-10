@@ -366,7 +366,7 @@ For each population, the conditional probability of each outcome is estimated fr
 Bayes' theorem is then applied:
 
 
-\P(S \mid C)\
+\(P(S \mid C)\)
 ==========
 
 $$\frac{P(C \mid S)P(S)}
@@ -397,14 +397,16 @@ Run:
 python Error_finder.py
 ```
 
-This script evaluates the primary dataset against Test A and identifies:
+This script evaluates the primary dataset against Test A (the more accurate test) and identifies:
 
 * Type I errors — false positives
 * Type II errors — false negatives
 
 The classification rule is based on the (mg)-versus-decay separation boundary.
 
-> **Implementation note:** `Error_finder.py` should be reviewed before relying on its printed totals, because its current counter variables are reset inside the iteration loop. The README therefore does not claim a definitive Type I/Type II count from this script.
+From this, we found that the method of diagnosis has these many errors:
+Type 1 - 0 (false positives)
+Type 2 - 27 (false negatives)
 
 ---
 
@@ -438,7 +440,7 @@ The final output is an estimated probability of belonging to the schizophrenic p
 
 ## Medical disclaimer
 
-This program is **not a medical diagnostic tool**.
+This program is **NOT a medical diagnostic tool**.
 
 Its output should not be interpreted as a clinical diagnosis or medical advice.
 
@@ -507,14 +509,16 @@ The script evaluates:
 
 * individual test accuracy
 * joint test outcomes
-* (P(\text{schizophrenic}\mid\text{test outcome}))
-* (P(\text{correct diagnosis}\mid\text{test outcome}))
+* \(P(\text{schizophrenic}\mid\text{test outcome})\)
+* \(P(\text{correct diagnosis}\mid\text{test outcome})\)
 
-for:
+for cases:
 
 $$
 AB,\quad AB',\quad A'B,\quad A'B'.
 $$
+
+Where A = Positive for test A, and A' = Negative for test A, so A'B is negative on A and positive on B.
 
 Importantly, the decision boundaries are not refitted to the external test data. They are carried over from the primary analysis.
 
@@ -785,7 +789,7 @@ Potential extensions include:
 
 # Author Contributions
 
-## [Advik Sakhare]
+## Advik Sakhare
 
 **Computational Researcher & Quantitative Developer**
 
@@ -798,7 +802,7 @@ Potential extensions include:
 * Developed the external testing pipeline
 * Developed computational validation and visualisation tools
 
-## [Priya Kaur]
+## Priya Kaur
 
 **Research Analyst & Scientific Interpretation**
 
