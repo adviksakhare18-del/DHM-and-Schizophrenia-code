@@ -8,8 +8,10 @@ __pycache__/
 venv/
 env/
 
-# IDE / editor files
+# VS Code
 .vscode/
+
+# Other IDEs
 .idea/
 
 # OS files
