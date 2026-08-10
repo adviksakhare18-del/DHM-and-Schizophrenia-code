@@ -793,7 +793,7 @@ Potential extensions include:
 
 # Author Contributions
 
-## [Your Name]
+## [Advik Sakhare]
 
 **Computational Researcher & Quantitative Developer**
 
@@ -806,7 +806,7 @@ Potential extensions include:
 * Developed the external testing pipeline
 * Developed computational validation and visualisation tools
 
-## [Other Author]
+## [Priya Kaur]
 
 **Research Analyst & Scientific Interpretation**
 
