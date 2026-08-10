@@ -83,11 +83,11 @@ The six fitted parameters are:
 
 | Parameter | Description                            |
 | --------- | -------------------------------------- |
-| (mg)      | Gradient of the depolarisation section |
-| (b)       | Initial value of the linear section    |
-| (j)       | Restorative-force parameter            |
-| (k)       | Resistive/damping parameter            |
-| (l)       | Proportionality parameter              |
+|  mg       | Gradient of the depolarisation section |
+|  b        | Initial value of the linear section    |
+|  j        | Restorative-force parameter            |
+|  k        | Resistive/damping parameter            |
+|  l        | Proportionality parameter              |
 | `base`    | Baseline membrane potential            |
 
 For the oscillatory region, the implementation defines
