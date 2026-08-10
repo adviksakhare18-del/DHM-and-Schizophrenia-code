@@ -1,0 +1,53 @@
+THIS IS THE INSTRUCTION FILE FOR USING THE DATA IN THIS REPOSITORY:
+
+    *IMPORTANT* : You are free to use as much of whatever is in this repository however you want to, so long as it is for
+    personal purposes, and you do not try to pass off my research or my code off as your own. 
+
+    Just credit my full name in passing at the very least, that's good enough for me.  :)
+
+    At the beginning of every file, there is a comment containing the 'order number' of the file, along with a one-liner 
+    of what it does.
+
+    The order number of the file tells you what is the 'order' of file creation, as well as the order you should run 
+    the files in locally so things make sense.
+
+    Eg: # 1. FILE FUNCTION
+
+    This file is the first you should look at (and run if possible), and the outlined FILE FUNCTION will happen.
+
+    There may be errors when you run the code locally, but it isn't a problem on my end, because I rigorously debugged my 
+    code and made sure it works okay on my laptop, so it might be something to do with not having a library installed 
+    or having a different directory. Good luck on fixing it if you get an error, because there is next to nothing I can 
+    do in that case.  :)
+
+    Any file/folder that begins with Claude was either generated directly using Claude Sonnet 5, or using the code it that 
+    it generated. Everything else is about 95% manually typed code (with the poor variable naming giving it away) with a
+    tiny bit of AI help for debugging.
+
+    I typed this using Cursor, and I used the inbuilt agent for minimal debugging during the Bayes' Theorem sections of the code.
+
+    If you have any questions,requests (or hopefully internships) for me then please don't hesitate to email me at:
+    advik.sakhare.18@gmail.com, with an interesting subject line and I will get back to you ASAP.
+
+    If you want a full proper breakdown of the stuff inside the files then have a look through the README. Theres stuff 
+    there that you'll most likely find helpful.
+
+    Info about files, folders and functions:
+
+    The file useful.py is a WIP file containing a bunch of functions I will use regularly in my work to make my life simpler,
+    and keep my code clean. It is a very well formatted file and I wrote it all myself so please go have a look at it.
+
+    The functions buildarray() and buildarraytest() are functions that will generate a character array of whatever column 
+    of the initial and test csv's you want to analyse.
+
+    The function fit_potential() uses the Neldor-Mead algorithm 100,000 times on the function and the input dataset to 
+    minimise error. It is used for curve fitting over piecewise, janky and badly behaved functions because it only looks at 
+    function values at points and completely skips the fun stuff with partial derivatives and hessians, which can quickly
+    blow up to infinite values near the boundaries of the pieces of the action potential approxmation function.
+
+    Claude output raw is the 'output' folder of Claude_csv_maker.py, just renamed
+
+    Claude test output is the above, but only with the csv's. 
+
+    Correlation graphs is the folder containing the scatterplots of the graphs of 'mg vs j' and 'mg vs decay', 
+    which are used for diagnosis in tests A and B.
