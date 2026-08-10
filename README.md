@@ -185,23 +185,18 @@ For each action potential, `fit_potential()` from `Claude_curve_fit.py` performs
 
 The optimisation minimises the sum of squared differences between the observed signal and the mathematical approximation:
 
+
 $$
-E(\theta)
-=
-\sum_i
-\left(
-V_{\mathrm{model}}(t_i;\theta)
--
-V_{\mathrm{observed}}(t_i)
-\right)^2
+E( \theta) = \sum_i\left(V_{\mathrm{model}}(t_i;\theta) - V_{\mathrm{observed}}(t_i)\right)^2
 $$
+
 
 where
 
-$$
-\theta =
-(mg,b,j,k,l,\text{base}).
-$$
+
+$$\theta =
+(mg,b,j,k,l,\text{base}).$$
+
 
 The optimisation is subject to numerical validity constraints, including
 
@@ -370,13 +365,13 @@ For each population, the conditional probability of each outcome is estimated fr
 
 Bayes' theorem is then applied:
 
-$$
-P(S\mid C)
+
+\P(S \mid C)\
 ==========
 
-\frac{P(C\mid S)P(S)}
-{P(C\mid S)P(S)+P(C\mid H)P(H)}
-$$
+$$\frac{P(C \mid S)P(S)}
+{P(C \mid S)P(S)+P(C \mid H)P(H)}$$
+
 
 where:
 
