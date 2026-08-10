@@ -366,7 +366,7 @@ For each population, the conditional probability of each outcome is estimated fr
 Bayes' theorem is then applied:
 
 
-\(P(S \mid C)\)
+\(P(S\mid C)\)
 ==========
 
 $$\frac{P(C \mid S)P(S)}
@@ -405,8 +405,9 @@ This script evaluates the primary dataset against Test A (the more accurate test
 The classification rule is based on the (mg)-versus-decay separation boundary.
 
 From this, we found that the method of diagnosis has these many errors:
-Type 1 - 0 (false positives)
-Type 2 - 27 (false negatives)
+
+* Type 1 - 0 (false positives)
+* Type 2 - 27 (false negatives)
 
 ---
 
