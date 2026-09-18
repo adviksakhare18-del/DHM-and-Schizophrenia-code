@@ -37,4 +37,4 @@ For questions concerning use of material outside the permissions granted by the 
 
 advik.sakhare.18@gmail.com
 
-[PRIYA'S EMAIL]
+pkaur20071981@gmail.com
