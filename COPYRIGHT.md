@@ -30,8 +30,11 @@ Any third-party material, including datasets, libraries, references, images, or 
 When using, reproducing, or substantially incorporating material from this project, users should retain the applicable copyright and licence notices and provide appropriate attribution to:
 
 **Advik Sakhare**
+
 **Gurkiran Kaur**
 
 For questions concerning use of material outside the permissions granted by the applicable licence, please contact the authors at the email addresses below:
+
 advik.sakhare.18@gmail.com
+
 [PRIYA'S EMAIL]
