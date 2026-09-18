@@ -815,6 +815,16 @@ Please credit the original authors when reusing the research, mathematical frame
 
 ---
 
+## Copyright & Licensing
+
+© 2026 Advik Sakhare and Gurkiran (Priya) Kaur.
+
+The original source code contained in this repository is licensed under the [MIT License](LICENSE). See [`COPYRIGHT.md`](COPYRIGHT.md) for information regarding authorship, contributions, copyright ownership, and third-party material.
+
+Unless otherwise stated, third-party datasets, libraries, references, and other external materials remain subject to their respective licences and copyright restrictions.
+
+---
+
 # Disclaimer
 
 This project is an **educational and research-oriented computational model**.
