@@ -17,14 +17,24 @@ def main():
         for row in file:
             rawmatrix.append(row)
         yavg,ystd = outarray(rawmatrix[1:])
+        
+        schizodata = pd.read_csv('schizophrenia_action_potential.csv')
+        schizavg = schizodata['Average']
+
         yup = yhigh(yavg,ystd)
         ydown = ylow(yavg,ystd)
         x1 = linspace(0,80,0.05)
         y1 = multifunc(x1,potential)
-        quickplot(x1,yavg, label = "Actual data")
-        quickplot(x1,yup,label = "Upper bound")
-        quickplot(x1,ydown, label = "Lower bound")
+        y2 = multifunc(x1,potential2)
+
+        # FIND A WAY TO PLOT THE AVERAGE SCHIZOPHRENIC ACTION POTENTIAL TOO
+        quickplot(x1,yavg, label = "Actual healthy data")
         quickplot(x1,y1,"Action potential of a healthy human","Time (ms)","Action Potential (mV)",label="Approximation")
+        mpl.show()
+        #quickplot(x1,yup,label = "Upper bound")          # UNCOMMENT THESE IF REQUIRED
+        #quickplot(x1,ydown, label = "Lower bound")
+        quickplot(x1,schizavg,label='Actual data') # KEEP WORKING ON TS
+        quickplot(x1,y2,'Action potential of a schizophrenic human','Time (ms)','Action Potential (mV)',label='Approximation')
         mpl.show()
 
 def yhigh(yavg,ystd):
@@ -44,7 +54,7 @@ def outarray(matrix):
     ystd = []
     for row in matrix:
         try:
-            rowext = multifunc(row[1:], float) #Change it back to 1:
+            rowext = multifunc(row[1:], float)
             yavg.append(rowext[-2])
             ystd.append(rowext[-1])
         except TypeError: # This is NECESSARY please dont remove it
@@ -59,7 +69,7 @@ def inter(x, int):
     return round(x,int)
 
 # Solved for ODE jv''+kv'+lv=0 using laplace transform (see paper)
-def potential(t):
+def potential(t): # Healthy function
     # --- Parameters ---
     mg = 402.2442 # linear increase gradient
     b = 0.1662 # y intercept of linear increase
@@ -83,6 +93,32 @@ def potential(t):
         y = m.exp(-k*t/(2*j))* (b*m.cos(Q*t) + C/Q*m.sin(Q*t))+base
     #---------------------------
     return y
+
+def potential2(t): # Schizophrenic function
+    # --- Parameters ---
+    mg = 270.549390 # linear increase gradient
+    b = 0.00000410684116 # y intercept of linear increase
+    j = 0.0329462946 # strength of restorative force (equivalent to spring constant in DHM system)
+    k = 0.0799910156 # 0 < k < sqrt(4jl), or else you'll get complex solutions or cause the resistive term to add to jv''
+    l = 0.0485529758 # constant of proportionality, keeps stuff clean
+    base = -68.5267499 # Baseline potential in mV
+    shift = b/mg + 5 # Ability to shift along time axis (controls point of start for linear section)
+    # ------------------
+    
+    Q = m.sqrt((4*j*l-k**2)/(4*j**2)) # Equivalent to big K from book
+    C = mg + b*k/(2*j)
+    t -= shift # Shifts graph to right by shift value
+    
+    # --- Piecewise Function ---
+    if t<-b/mg: # Baseline
+        y = base
+    elif -b/mg <= t < 0: # Depolarisation 
+        y = mg*t+b+base
+    elif t>=0: # Repolarisation, Hyperpolarisation and return to baseline value
+        y = m.exp(-k*t/(2*j))* (b*m.cos(Q*t) + C/Q*m.sin(Q*t))+base
+    #---------------------------
+    return y
+
 
 if __name__ == "__main__":
     main()
