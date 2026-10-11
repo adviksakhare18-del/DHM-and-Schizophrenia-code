@@ -27,14 +27,13 @@ def main():
         y1 = multifunc(x1,potential)
         y2 = multifunc(x1,potential2)
 
-        # FIND A WAY TO PLOT THE AVERAGE SCHIZOPHRENIC ACTION POTENTIAL TOO
-        quickplot(x1,yavg, label = "Actual healthy data")
-        quickplot(x1,y1,"Action potential of a healthy human","Time (ms)","Action Potential (mV)",label="Approximation")
+        quickplot(x1,yavg, label = "Sim. healthy data")
+        quickplot(x1,y1,"","Time (ms)","Action Potential (mV)",label="Approximation")
         mpl.show()
         #quickplot(x1,yup,label = "Upper bound")          # UNCOMMENT THESE IF REQUIRED
         #quickplot(x1,ydown, label = "Lower bound")
-        quickplot(x1,schizavg,label='Actual data') # KEEP WORKING ON TS
-        quickplot(x1,y2,'Action potential of a schizophrenic human','Time (ms)','Action Potential (mV)',label='Approximation')
+        quickplot(x1,schizavg,label='Sim. schizophrenic data')
+        quickplot(x1,y2,'','Time (ms)','Action Potential (mV)',label='Approximation')
         mpl.show()
 
 def yhigh(yavg,ystd):
