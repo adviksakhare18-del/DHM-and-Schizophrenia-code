@@ -8,7 +8,7 @@ from Series_plot import buildarray
 
 def main():
     var1 = 'mg'
-    var2 = 'decay'
+    var2 = 'decay' # Can change this to 'j' if needed
     x1 = np.array(buildarray(var1, 'healthy'), dtype=float)
     y1 = np.array(buildarray(var2, 'healthy'), dtype=float)
     x2 = np.array(buildarray(var1, 'schizophrenic'), dtype=float)
@@ -27,7 +27,8 @@ def main():
     quickscatter(x2,y2, label = "Schizophrenic")
     x = linspace(0,max(x),max(x)/1000)
     poly = multifunc(x,avgfunc)
-    quickplot(x,poly,f'{var1} vs {var2}',var1, var2, label=f"{avgarray[0]}{var1}^2 + {avgarray[1]}{var1} + {avgarray[2]}")
+    quickplot(x,poly,f'{var1} vs {var2}',f"{var1} (mV/ms)", f"{var2} (1/ms)", label=f"Separation Parabola") # 1/ms
+    # Could also label as f"{avgarray[0]}{var1}^2 + {avgarray[1]}{var1} + {avgarray[2]}
     mpl.show()
 
 def averagearray(arr1, arr2):
